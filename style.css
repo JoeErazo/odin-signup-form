@@ -11,7 +11,7 @@
 
 body {
   display: flex;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 a {
@@ -24,8 +24,14 @@ footer {
   align-self: center;
 }
 
+blockquote span {
+  position: relative;
+}
+
 cite {
-  align-self: flex-end;
+  position: absolute;
+  right: -40px;
+  bottom: -20px;
 }
 
 form {
@@ -47,7 +53,7 @@ h1 {
 }
 
 label {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 button {
@@ -70,7 +76,7 @@ button {
 
 .sidebar {
   color: white;
-  flex: 1 1 800px;
+  flex: 1 1 400px;
   background: url(./images/cabbage-patch.jpg);
   display: flex;
   flex-direction: column;
@@ -87,8 +93,8 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 20px;
-  background-color: whitesmoke;
+  gap: 40px;
+  background-color: rgb(250, 250, 250);
 }
 
 .quote-container {
@@ -102,10 +108,20 @@ button {
 }
 
 .input-container {
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   background-color: white;
   box-shadow: 0 5px 5px rgb(220, 220, 220);
+}
+
+.form-row {
+  display: flex;
+  gap: 40px;
+}
+
+.label-field-pair {
+  display: flex;
+  flex-direction: column;
 }
 
 .login {
