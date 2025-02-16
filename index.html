@@ -36,38 +36,49 @@
 
     <form action="">
       <div class="input-container">
+        <p class="required">Required fields are followed by <span aria-label="required">*</span></p>
         <h2>Eat your vegetables!</h1>
 
         <fieldset>
           <div class="form-row">
             <p class="label-field-pair">
               <label for="first-name">First Name</label>
-              <input type="text" id="first-name" name="firstName">
+              <input type="text" id="first-name" name="firstName" placeholder="John" minlength="2"/>
             </p>
             <p class="label-field-pair">
               <label for="last-name">Last Name</label>
-              <input type="text" id="last-name" name="lastName"></input>
+              <input type="text" id="last-name" name="lastName" placeholder="Smith" minlength="2"/>
             </p>
           </div>
           <div class="form-row">
             <p class="label-field-pair">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email">
+              <label for="email">
+                Email
+                <span aria-label="required">*</span>
+              </label>
+              <input type="email" id="email" name="email" placeholder="john.smith@halamon.com" required/>
             </p>
             <p class="label-field-pair">
               <label for="phone-number">Phone Number</label>
-              <input type="tel" id="phone-number" name="phoneNumber"></input>
+              <!-- matched against Philippine mobile phone number pattern -->
+              <input type="tel" id="phone-number" name="phoneNumber" placeholder="+639876543210" pattern="^(09|\+639)\d{9}$"/>
             </p>
           </div>
           <div class="form-row">
             <p class="label-field-pair">
-              <label for="password">Password</label>
-              <input type="password" id="password" name="password">
+              <label for="password">
+                Password
+                <span aria-label="required">*</span>
+              </label>
+              <input type="password" id="password" name="password" minlength="8" maxlength="32" required/>
               
             </p>
             <p class="label-field-pair">
-              <label for="confirm-password">Confirm Password</label>
-              <input type="password" id="confirm-password" name="confirmPassword"></input>
+              <label for="confirm-password">
+                Confirm Password
+                <span aria-label="required">*</span>
+              </label>
+              <input type="password" id="confirm-password" name="confirmPassword" minlength="8" maxlength="32" required/>
             </p>
           </div>
         </fieldset>
