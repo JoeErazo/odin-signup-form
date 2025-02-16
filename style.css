@@ -12,6 +12,7 @@
 body {
   display: flex;
   min-height: 100vh;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -156,6 +157,8 @@ button:focus-visible {
   justify-content: center;
   gap: 60px;
   background-color: rgb(250, 250, 250);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .quote-container {
