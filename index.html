@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style.css" rel="stylesheet">
+  <title>Sign-up Form</title>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-container">Logo</div>
+    <footer>
+      Photo by 
+      <a class="photo-credit" href="https://unsplash.com/@pinamessina" target="_blank" rel="noopener noreferrer">Pina Messina</a>
+       on 
+       <a class="unsplash" href="https://unsplash.com/" target="_blank" rel="noopener noreferrer">Unsplash</a>
+    </footer>
+  </div>
+  <div class="form-container">
+    <div class="quote-container">
+      <blockquote class="message">This is the message</blockquote>
+      <cite>- Author</cite>
+    </div>
+    <form action="">
+      <legend>Let's do this!</legend>
+      <fieldset>
+        <p class="name">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="firstName">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="lastName"></input>
+        </p>
+        <p class="contact">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="phone-number">Phone Number</label>
+          <input type="tel" id="phone-number" name="phoneNumber"></input>
+        </p>
+        <p class="secret">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="password" id="confirm-password" name="confirmPassword"></input>
+        </p>
+      </fieldset>
+      <button>Create Account</button>
+      <p class="login">
+        Already have an account?
+        <a href="#">Log in</a>
+      </p>
+    </form>
+  </div>
+</body>
+</html>
