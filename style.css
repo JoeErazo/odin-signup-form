@@ -75,10 +75,25 @@ button {
   border: none;
   border-radius: 6px;
   align-self: flex-start;
-  font-size: 12px;
-  padding: 12px 32px;
+  font-size: 16px;
+  font-family: inherit;
+  font-weight: 600;
+  padding: 12px 48px;
   background-color: #005b27;
   color: white;
+  box-shadow: 0 5px 5px rgb(220, 220, 220);
+}
+
+button:hover {
+  background-color: #007b35;
+}
+
+button:active {
+  background-color: #003718;
+}
+
+button:focus-visible {
+  outline: 3px solid #003718;
 }
 
 .quote-container,
