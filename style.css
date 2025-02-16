@@ -31,8 +31,8 @@ footer {
 
 blockquote span {
   position: relative;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 cite {
@@ -52,11 +52,11 @@ fieldset {
   border: none;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 16px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 30px;
 }
 
@@ -64,6 +64,11 @@ label {
   font-size: 20px;
   font-family: "Alumni Sans Pinstripe", sans-serif;
   font-weight: 600;
+  text-transform: uppercase;
+}
+
+input {
+  width: 200px;
 }
 
 button {
@@ -116,7 +121,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 40px;
+  gap: 60px;
   background-color: rgb(250, 250, 250);
 }
 
@@ -135,7 +140,7 @@ button {
 
 .form-row {
   display: flex;
-  gap: 40px;
+  gap: 100px;
 }
 
 .label-field-pair {
