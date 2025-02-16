@@ -6,12 +6,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Chocolate Classical Sans", sans-serif;
 }
 
 body {
   display: flex;
   min-height: 100vh;
+}
+
+h1 {
+  font-family: "Ranchers", sans-serif;
+  font-size: 40px;
 }
 
 a {
@@ -26,12 +31,15 @@ footer {
 
 blockquote span {
   position: relative;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 cite {
   position: absolute;
   right: -40px;
-  bottom: -20px;
+  bottom: -30px;
+  font-family: inherit;
 }
 
 form {
@@ -53,7 +61,9 @@ h2 {
 }
 
 label {
-  font-size: 12px;
+  font-size: 20px;
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+  font-weight: 600;
 }
 
 button {
@@ -114,10 +124,6 @@ button {
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-
-.message {
-  
 }
 
 .input-container {
